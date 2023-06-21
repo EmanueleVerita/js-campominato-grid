@@ -13,6 +13,16 @@ for(let i = 1 ; i <= cellGenerator ; i++){
     newCell.classList.add('cell');
     newCell.append(i);
 
+    newCell.addEventListener('click' , function(){
+
+        this.classList.toggle('active');
+        console.log(this.innerHTML);
+
+        
+
+
+    });
+
     cellContainer.append(newCell);
 
 }
