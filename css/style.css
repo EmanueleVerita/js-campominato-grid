@@ -13,15 +13,30 @@
     flex-wrap: wrap;
 }
 
+button{
+    background-color: aqua;
+    color: white;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
 
 .cell {
     width: 10%;
     height: 100px;
     line-height: 100px;
     text-align: center;
-    border: 5px solid ;
-    background-color: yellow ;
+    border: 5px solid black;
+    background-color: yellow;
     cursor: pointer;
+}
+
+.cell:hover{
+    background-color: green;
 }
 
 .active{

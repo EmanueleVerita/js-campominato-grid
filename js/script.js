@@ -1,13 +1,12 @@
-// chiedo all'utente quante celle vuole generare
+const playButton = document.querySelector('button');
 
-const cellGenerator = parseInt(prompt('quante celle vuoi generare?'));
+playButton.addEventListener('click' , function(){
 
+    const cellContainer = document.querySelector('.container');
 
-// genero le celle 
+    cellContainer.innerHTML = ' ';
 
-const cellContainer = document.querySelector('.container');
-
-for(let i = 1 ; i <= cellGenerator ; i++){
+for(let i = 1 ; i <= 100 ; i++){
 
     const newCell = document.createElement('div');
     newCell.classList.add('cell');
@@ -26,3 +25,9 @@ for(let i = 1 ; i <= cellGenerator ; i++){
     cellContainer.append(newCell);
 
 }
+
+
+})
+
+
+
